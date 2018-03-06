@@ -18,12 +18,8 @@ contract hr{
         return(candidates[id].name,candidates[id].date);
     }
     function check(uint256 id)public constant returns(string){
-    if(candidates[id].id==id){
-        return("already attended");
-        }
-        else{
-            return("new candidate");
-        }
+    require(candidates[id].id!=id);
+        return("new candidate");
         
     }   
  }
