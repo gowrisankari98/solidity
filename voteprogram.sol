@@ -37,7 +37,7 @@ contract vote{
         }
         else if(vo[1].co==vo[2].co)                                         
         {
-            return "Tie situation";
+            return "Draw";
         }
         }
     }
